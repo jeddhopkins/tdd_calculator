@@ -20,4 +20,8 @@ public class Calculator {
 	public int square(int num1) {
 		return num1 * num1;
 	}
+	
+	public double sqroot(double num1) {
+		return Math.sqrt(num1);
+	}
 }

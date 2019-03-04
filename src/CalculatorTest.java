@@ -121,13 +121,23 @@ class CalculatorTest extends Calculator {
 	@Nested
 	@DisplayName("square of a number")
 	class Square {
-
+		
 		@DisplayName("6 squared equals 36")
 		@Test
 		void sixSix() {
-			assertEquals(36,  calc.square(6));
+			assertEquals(36, calc.square(6));
 		}
 	}
 	
+	@Nested
+	@DisplayName("square root of a number")
+	class SquareRoot {
+		
+		@DisplayName("square root of 64 equals 8")
+		@Test
+		void sixtyfour() {
+			assertEquals(8, calc.sqroot(64));
+		}
+	}
 	
 }
