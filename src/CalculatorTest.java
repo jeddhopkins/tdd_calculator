@@ -114,15 +114,19 @@ class CalculatorTest extends Calculator {
 		@DisplayName("10 / 0 throws an error")
 		@Test
 		void tenzero() {
-			
+			assertThrows(IllegalArgumentException.class, () -> calc.divide(10, 0));
 		}
 	}
 	
 	@Nested
 	@DisplayName("square of a number")
 	class Square {
-		
-		@DisplayName("")
+
+		@DisplayName("6 squared equals 36")
+		@Test
+		void sixSix() {
+			assertEquals(36,  calc.square(6));
+		}
 	}
 	
 	
