@@ -36,11 +36,11 @@ class CalculatorTest extends Calculator {
 			assertEquals(-1, calc.add(3, -4));
 		}
 
-//		@DisplayName("2.5 + 2.6 equals 5.1")
-//		@Test
-//		void decimalDecimal() {
-//			assertEquals(5.1, calc.add(2.5, 2.6));
-//		}
+		@DisplayName("2.5 + 2.6 equals 5.1")
+		@Test
+		void decimalDecimal() {
+			assertEquals(5.1, calc.add(2.5, 2.6));
+		}
 	}
 	
 	@Nested
